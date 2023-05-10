@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 400px;
+    width: 300px;
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(151,0,255,1) 100%);
+    border-radius: 30px;
+    color: white;
+}
+
+.img{
+    width: 70%;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+}
