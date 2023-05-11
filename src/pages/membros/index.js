@@ -9,7 +9,7 @@ export default function Membros({ membros }) {
             <Head>
               <title>Membros do projetos :) </title>
             </Head>
-            <h2>Membros queridos do projetos</h2>
+            <h1>Membros queridos do projetos</h1>
             {membros.map(membro => {
                 return(
                     <div className={`${styles['card']}`}>

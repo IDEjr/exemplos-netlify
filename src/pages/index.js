@@ -9,7 +9,7 @@ export default function Home({blogs}) {
   return (
     <div className={styles['container']}>
       <Head><title>Página de demonstração de demonstração</title></Head>
-      <h1 className={styles['header']}>Está é um repositório com exemplos do Netlify CMS</h1>
+      <h1 className={styles['header']}>Este é um repositório com exemplos do Netlify CMS</h1>
       <p className={styles['subtitle']}>Sinta-se a vontade para adicionar mais exemplos</p>
       <p className={styles['subtitle']}>Abra /admin para ver as opções</p>
       <ul className={styles['blog-list']}>
