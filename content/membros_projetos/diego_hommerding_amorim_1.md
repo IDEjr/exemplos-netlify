@@ -3,7 +3,7 @@ nome: Diego Hommerding Amorim
 ehDiretor: false
 semestre_entrada: 2
 semestre_saida: ""
-foto: /uploads/perfil_3_.jpg
-data_entrada: January 28, 2023 12:30 PM
+foto: /uploads/perfil_4_.jpg
+data_entrada: March 10, 2023 9:30 AM
 data_saida: ""
 ---
