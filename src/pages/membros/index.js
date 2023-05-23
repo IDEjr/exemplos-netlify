@@ -16,7 +16,7 @@ export default function Membros({ membros }) {
                     <div className={`${styles['card']}`}>
                         <span>{membro.nome}</span>
                         <img className={styles['img']} src={membro.foto}></img>
-                        <span> {membro.selecao === "Não" ? "Membro" : membro.selecao} </span>
+                        <span> {membro.cargo === "Não" ? "Membro" : membro.cargo} </span>
                         <span>Entrou no {membro.semestre_entrada}° semestre</span>
                         <span>{membro.data_entrada}</span>
                     </div>
