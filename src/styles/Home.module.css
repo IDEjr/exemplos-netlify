@@ -2,6 +2,7 @@
   text-align: center;
   padding: 20px;
   height: 100vh;
+  width: 100%;
 }
 
 .header {
@@ -19,7 +20,8 @@
   flex-wrap: wrap;
   text-align: start;
   margin: auto;
-  width: max-content;
+  width: 100%;
+  justify-content: center;
 }
 
 .exemplo-list a {
