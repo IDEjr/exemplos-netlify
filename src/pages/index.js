@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { handleJSONfiles } from '../../functions/jsonHandler'
+import Exemplo from '@/components/Exemplo'
 
 export default function Home({exemplos}) {
   console.log(exemplos)
@@ -15,17 +16,19 @@ export default function Home({exemplos}) {
       <p className={styles['subtitle']}>Abra /admin para ver as opções</p>
       <ul className={styles['exemplo-list']}>
         {exemplos && exemplos.map((exemplo,i) => (
-          <Link className={styles["link"]} key={i} href={`/exemplos/${exemplo.fileName}`}>
-            <div className={styles["card"]}>
-                <span >{exemplo.titulo}</span>
-            </div>
-          </Link>
+          <Exemplo key={i} href={`/exemplos/${exemplo.fileName}`}>
+            {exemplo.titulo}
+          </Exemplo>
         ))}
-        <Link className={styles["link"]} href={`/membros`}>
-            <div className={styles["card"]}>
-                <span >Membros do Projetos</span>
-            </div>
-          </Link>
+        <Exemplo href="/membros" >
+          Membros do Projetos
+        </Exemplo>
+        <Exemplo href="https://github.com/leoheisler/netlify_cms_example" >
+          Exemplo Leo (Provisório)
+        </Exemplo>
+        <Exemplo href="https://github.com/DiegoHommer/netlify_example" >
+          Exemplo Diego (Provisório)
+        </Exemplo>
       </ul>
     </div>
   )
