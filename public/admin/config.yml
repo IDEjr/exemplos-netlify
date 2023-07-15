@@ -50,7 +50,7 @@ collections:
       - {label: "Foto", name: "foto", widget: "image"}
       - {label: "Data em que entrou na equipe", name: "data_entrada", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL"}
       - {label: "Data em que saiu na equipe", required: false, name: "data_saida", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL"}
-  - name: "membros" 
+  - name: "exemplos_externos" 
     extension: "json"
     description: "Exemplos em repositórios externos."
     label: "Exemplos externos" 
