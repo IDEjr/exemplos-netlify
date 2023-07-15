@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css'
 import { handleJSONfiles } from '../../functions/jsonHandler'
 import Exemplo from '@/components/Exemplo'
 
-export default function Home({exemplos}) {
+export default function Home({exemplos, exemplos_externos}) {
   console.log(exemplos)
   return (
     <div className={styles['container']}>
@@ -23,12 +23,11 @@ export default function Home({exemplos}) {
         <Exemplo href="/membros" >
           Membros do Projetos
         </Exemplo>
-        <Exemplo href="https://github.com/leoheisler/netlify_cms_example" >
-          Exemplo Leo (Provisório)
-        </Exemplo>
-        <Exemplo href="https://github.com/DiegoHommer/netlify_example" >
-          Exemplo Diego (Provisório)
-        </Exemplo>
+        {exemplos_externos && exemplos_externos.map((exemplos_externos,i) => (
+          <Exemplo key={i} href={`/exemplos_externos/${exemplos_externos.fileName}`}>
+            {exemplos_externos.nome_exemplo}
+          </Exemplo>
+        ))}
         <Exemplo href="https://decapcms.org/docs/intro/" >
           Documentação
         </Exemplo>
@@ -39,7 +38,8 @@ export default function Home({exemplos}) {
 
 export async function getStaticProps(){
   const exemplos = handleJSONfiles("./content/exemplos");
+  const exemplos_externos = handleJSONfiles("./content/exemplos_externos");
   return {
-    props: { exemplos },
+    props: { exemplos, exemplos_externos},
   };
 }
