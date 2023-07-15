@@ -29,6 +29,9 @@ export default function Home({exemplos}) {
         <Exemplo href="https://github.com/DiegoHommer/netlify_example" >
           Exemplo Diego (Provisório)
         </Exemplo>
+        <Exemplo href="https://decapcms.org/docs/intro/" >
+          Documentação
+        </Exemplo>
       </ul>
     </div>
   )

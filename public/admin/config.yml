@@ -50,3 +50,15 @@ collections:
       - {label: "Foto", name: "foto", widget: "image"}
       - {label: "Data em que entrou na equipe", name: "data_entrada", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL"}
       - {label: "Data em que saiu na equipe", required: false, name: "data_saida", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL"}
+  - name: "membros" 
+    extension: "json"
+    description: "Exemplos em repositórios externos."
+    label: "Exemplos externos" 
+    folder: "content/exemplos_externos" 
+    create: true 
+    slug: "{{fields.nome}}" 
+    fields: 
+      - {label: "Nome do exemplo", name: "nome", widget: "string"}
+      - {label: "Descrição do exemplo", name: "conteudo", widget: "markdown"}
+      - {label: "Link", name: "link", widget: "string"}
+      - {label: "Quem fez o exemplo?", name: "autor", widget: "relation", collection: "membros", search_fields: ["nome"], value_field: "{{nome}}"}
