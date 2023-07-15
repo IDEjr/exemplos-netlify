@@ -22,7 +22,7 @@ export default function Blog({ content }) {
             <Link href={content.link_exemplo}>
               Link do exemplo
             </Link>
-            <div>Exemplo feio por: {content.autor_exemplo}</div>
+            <div>Exemplo feito por: {content.autor_exemplo}</div>
           </div>
         </div>
     )
