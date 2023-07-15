@@ -58,7 +58,7 @@ collections:
     create: true 
     slug: "{{fields.nome}}" 
     fields: 
-      - {label: "Nome do exemplo", name: "nome", widget: "string"}
-      - {label: "Descrição do exemplo", name: "conteudo", widget: "markdown"}
-      - {label: "Link", name: "link", widget: "string"}
-      - {label: "Quem fez o exemplo?", name: "autor", widget: "relation", collection: "membros", search_fields: ["nome"], value_field: "{{nome}}"}
+      - {label: "Nome do exemplo", name: "nome_exemplo", widget: "string"}
+      - {label: "Descrição do exemplo", name: "descricao_exemplo", widget: "markdown"}
+      - {label: "Link", name: "link_exemplo", widget: "string"}
+      - {label: "Quem fez o exemplo?", name: "autor_exemplo", widget: "relation", collection: "membros", search_fields: ["nome"], value_field: "{{nome}}"}
