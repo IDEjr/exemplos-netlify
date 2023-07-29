@@ -44,7 +44,7 @@ export async function getStaticProps({params : {slug} }){
 }
 
 export async function getStaticPaths() {
-  const raiz = process.env.PWD;
+  const raiz = process.env.PWD || process.env.INIT_CWD;
   const caminho = "exemplos";
 
   const filesInProjects = fs.readdirSync(raiz + `/content/${caminho}`)

@@ -11,7 +11,7 @@ export default function Membros({ membros }) {
               <title>Membros do projetos :) </title>
             </Head>
             <h1>Membros queridos do projetos</h1>
-            {membros.map(membro => {
+            {membros.map((membro) => {
                 return(
                     <div className={`${styles['card']}`}>
                         <span>{membro.nome}</span>
